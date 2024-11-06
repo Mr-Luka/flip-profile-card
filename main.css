@@ -41,7 +41,7 @@ body {
     transform-style: preserve-3d;
 }
 
-.front .back {
+.front, .back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -81,4 +81,23 @@ body {
     height: 100%;
     object-fit: cover;
     border-bottom-right-radius: 5em;
+}
+
+.card-content {
+    background-color: #051320;
+    border-bottom-right-radius: 5em;
+    padding: 0.5em 2em 0.5em 1.5em;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.7em;
+}
+
+.card-content h2 {
+    width: min-content;
+    padding-top: 10px;
+    border-top: 4px #76dcc3 solid;
+    display: inline-block;
 }
