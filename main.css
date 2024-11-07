@@ -163,6 +163,7 @@ body {
     font-size: 1.1em;
     cursor: pointer;
     color: #76dcc3;
+    background: none;
 }
 
 .card-flipped {
