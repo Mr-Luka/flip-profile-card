@@ -9,7 +9,7 @@ body {
 }
 
 .profile-cards {
-    background-color: #233343;
+    background-color: #4a02443b;
     padding: 1.5rem;
     overflow: hidden;
 }
@@ -56,7 +56,7 @@ body {
 
 .back {
     transform: rotateY(180deg);
-    background-color: #051320;
+    background-color: #022130;
     padding: 3em 1.5em 1.5em 2em;
 }
 
@@ -84,7 +84,7 @@ body {
 }
 
 .card-content {
-    background-color: #051320;
+    background-color: #022130;
     border-bottom-right-radius: 5em;
     padding: 0.5em 2em 0.5em 1.5em;
     height: 40%;
