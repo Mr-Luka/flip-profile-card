@@ -101,3 +101,91 @@ body {
     border-top: 4px #76dcc3 solid;
     display: inline-block;
 }
+
+.more-btn {
+    position: absolute;
+    right: 2em;
+    top: 50%;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background-color: #c4c4c4;
+}
+
+.more-btn span {
+    background-color: #051320;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.more-btn span:first-child {
+    width: 1.8em;
+    height: 3px;
+}
+.more-btn span:last-child {
+    width: 3px;
+    height: 1.8em;
+}
+
+.card-inner::before,
+.card-inner::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-inner::before {
+    background-image: linear-gradient(0deg, #518982 0%, #76dcc3 10%);
+    width: 2em;
+    height: 50vh;
+    bottom: 24em;
+    z-index: 1;
+}
+
+.card-inner::after {
+    background-color: #233343;
+    top: 0.7em;
+    width: 2.8em;
+    height: 7px;
+    border-radius: 2px;
+}
+
+.back-btn {
+    border-color: transparent;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    color: #76dcc3;
+}
+
+.card-flipped {
+    transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 1000px) {
+    .card:nth-child(2) {
+        transform: translateY(-50px);
+    }
+    .card:nth-child(2):hover {
+        transform: translateY(-60px);
+    }
+    .card:hover {
+        transform: translateY(-10px)
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .card:nth-child(1) {z-index: 3;}
+    .card:nth-child(2) {z-index: 2;}
+    .card:nth-child(3) {z-index: 1;}
+}
